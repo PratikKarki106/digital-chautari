@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({children}: Readonly<
         <body className={`${inter.variable} ${sora.variable}`}>
           <Header />
           {children}
+          <Footer />
         </body>
       </html>
     );
