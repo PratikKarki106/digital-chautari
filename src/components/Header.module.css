@@ -1,0 +1,134 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(251, 251, 249, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-line);
+}
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 16px var(--padding-desktop);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logoGroup {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logoIcon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--color-teal), var(--color-teal-dark));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: var(--font-sora);
+    font-weight: 800;
+    font-size: 18px;    
+}
+
+.logoText h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.logoText p {
+    font-size: 12px;
+    color: var(--color-muted);
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navLink {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-muted);
+    padding: 8px 8px;
+    transition: color 0.2s ease;
+}
+
+.navLink:hover {
+    color: var(--color-ink);
+}
+
+.ctaButton {
+    background-color: var(--color-teal);
+    color: white;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.ctaButton:hover {
+    background-color: var(--color-teal-dark);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-ink);
+    border-radius: 2px;
+}
+
+.mobileMenu {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px var(--padding-mobile);
+    background: white;
+    border-top: 1px solid var(--color-line);
+
+}
+
+.mobileMenu .navLink {
+    font-size: 16px;
+    width: 100%;
+}
+
+.mobileMenu .active {
+    display: flex;
+}
+
+@media (max-width: 768px){
+    .container {
+        padding: 16px var(--padding-mobile);
+    }
+
+    .nav, .ctaButton {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
