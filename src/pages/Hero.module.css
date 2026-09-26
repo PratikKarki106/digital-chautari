@@ -1,0 +1,53 @@
+.hero {
+    position: relative;
+    background: linear-gradient(180deg, #E7F5EA 0%, #FBFBF9 100%);
+    padding: 84px 0 48px 0;
+    overflow: hidden;
+}
+
+.glow {
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(15, 148, 136, 0.15) 0%, rgba(224, 169, 48, 0.05) 40%, transparent 70%);
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding-desktop);
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    display: inline-block;
+    background-color: var(--color-chip-teal); 
+    color: var(--color-teal-dark);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    margin-bottom: 24px;
+}
+
+.headline {
+    font-family: var(--font-sora);
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-ink);
+    max-width: 720px;
+    margin-bottom: 20px;
+}
+
+.gradientText {
+    background: linear-gradient(90deg, #0f9488, #e0a930, #7fae3a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
