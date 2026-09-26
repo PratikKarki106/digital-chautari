@@ -116,11 +116,11 @@
     width: 100%;
 }
 
-.mobileMenu .active {
+.mobileMenuOpen {
     display: flex;
 }
 
-@media (max-width: 768px){
+@media (max-width: 760px){
     .container {
         padding: 16px var(--padding-mobile);
     }

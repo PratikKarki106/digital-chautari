@@ -26,7 +26,7 @@ export default function Header() {
                     </div>
                 </Link>
                 {/* Navigation Links */}
-                <nav>
+                <nav className={styles.nav}>
                     {navLinks.map((link) => (
                         <Link key={link.name}
                         href={link.href} className={styles.navLink}> {link.name}</Link>
@@ -43,7 +43,7 @@ export default function Header() {
                     <span></span>
                 </button>
             </div>
-            <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ""}`}>
+            <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.mobileMenuOpen : ""}`}>
                 {navLinks.map((link) => (
                     <Link key={link.name} href={link.href}
                     onClick={() => setIsMenuOpen(false)}
