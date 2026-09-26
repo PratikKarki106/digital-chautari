@@ -21,7 +21,7 @@ export default function Header() {
                 <Link href="/" className={styles.logoGroup}>
                     <div className={styles.logoIcon}>DC</div>
                     <div className={styles.logoText}>
-                        <h1>Digital Chautati</h1>
+                        <h1>Digital Chautari</h1>
                         <p>Creative Technology</p>
                     </div>
                 </Link>
