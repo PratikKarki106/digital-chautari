@@ -1,0 +1,175 @@
+.whoWeAre {
+    padding: 64px 0;
+    background-color: var(--color-paper);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding-desktop);
+}
+
+.twoColumn {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.heading {
+    font-family: var(--font-sora);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-ink);
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.storyText {
+    font-size: 16px;
+    color: var(--color-muted);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.checkList{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.checkListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--color-ink);
+    font-weight: 500;
+}
+
+.checkIcon {
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-chip-mint);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-teal);
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.meetTeamButton {
+    background-color: var(--color-teal);
+    color: white;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.meetTeamButton:hover{
+    background-color: var(--color-teal-dark);
+}
+
+.serviceGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.serviceCard {
+    background-color: white;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.serviceCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.serviceIcon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-chip);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.serviceIcon.mint {
+    background-color: var(--color-chip-mint);
+}
+
+.serviceIcon.teal {
+    background-color: var(--color-chip-teal);
+}
+
+.serviceIcon.gold {
+    background-color: var(--color-chip-gold);
+}
+
+.serviceIcon.lilac {
+    background-color: var(--color-chip-lilac);
+}
+
+.serviceTitle {
+    font-family: var(--font-sora);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-ink);
+    margin: 0;
+}
+
+.serviceText {
+    font-size: 14px;
+    color: var(--color-muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.serviceLink {
+    font-size: 14px;
+    color: var(--color-teal);
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.serviceLink:hover {
+    color: var(--color-teal-dark);
+}
+
+@media (max-width: 760px){ 
+    .container {
+        padding: 0 var(--padding-mobile);
+    }
+
+    .twoColumn{
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .serviceGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .checkList {
+        grid-template-columns: 1fr;
+    }
+}
