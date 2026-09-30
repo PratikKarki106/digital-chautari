@@ -1,0 +1,79 @@
+.process {
+    background-color: var(--color-navy);
+    padding: 64px 0;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding-desktop);
+}
+
+.heading{
+    font-family: var(--font-sora);
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.subheading{
+    font-size: 16px;
+    color: var(--color-muted);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 48px auto;
+}
+
+.stepGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.stepCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+.stepNumber {
+    font-family: var(--font-sora);
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--color-teal);
+    line-height: 1;
+    opacity: 0.6;
+}
+
+.stepTitle {
+    font-family: var(--font-sora);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.stepText {
+    font-size: 14px;
+    color: var(--color-muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 760px) {
+    .container {
+        padding: 0 var(--padding-mobile);
+    }
+
+    .stepsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .stepNumber {
+        font-size: 36px;
+    }
+}
